@@ -6,7 +6,7 @@
 <body>
     <header>
         <div id="logo">
-            <img src="../public/images/logo.png" alt="Logo de l'entreprise">
+            <img src="./public/images/30082289_7636941-removebg-preview.png" alt="Logo de l'entreprise">
         </div>
         <nav>
             <ul>
