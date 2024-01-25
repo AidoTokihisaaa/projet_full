@@ -1,101 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
 body, html {
     height: 100%;
     margin: 0;
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(to right, #76b852, #8DC26F);
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(120deg, #46000D, #5E0009, #720137, #590054, #42002E);
+    background-size: 400% 400%; /* Réduit la taille de l'arrière-plan pour un effet plus subtil */
+    animation: gradientAnimation 15s ease infinite;
 }
 
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
 .login-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: #fff;
-  }
-  
-  .login-card {
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(10px);
+    perspective: 1000px;
+}
+
+.login-card {
+    background: #fff;
     padding: 2rem;
-    border-radius: 15px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+    border-radius: 1rem;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
     width: 100%;
     max-width: 400px;
-  }
-  
-  .login-title {
-    text-align: center;
-    color: #fff;
-    margin-bottom: 2rem;
-  }
-  
-  .login-icon {
-    color: #ff8a65;
-    font-size: 4rem;
-  }
-  
-  .input-group {
     position: relative;
+    transition: transform 1s ease;
+}
+
+.login-card:hover {
+    transform: rotateY(10deg);
+}
+
+
+.login-title {
+    text-align: center;
+    color: #924a07;
     margin-bottom: 2rem;
-  }
-  
-  .input-icon {
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.input-icon {
     position: absolute;
     top: 50%;
-    left: 15px;
+    left: 12px;
     transform: translateY(-50%);
-    color: #ff8a65;
-  }
-  
-  .login-form input[type='text'],
-  .login-form input[type='password'] {
-    width: calc(100% - 6.5rem);
-    padding: 0.75rem 2.75rem;
-    border-radius: 25px;
+    color: #924a07;
+}
+
+.input-icon-eye {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    color: #924a07;
+    cursor: pointer;
+}
+
+.login-form input[type='text'],
+.login-form input[type='email'],
+.login-form input[type='password'] {
+    width: calc(85% - 2rem); 
+    margin: auto; 
+    padding: 1rem;
+    padding-left: 2.5rem; 
+    padding-right: 2.5rem; 
+    border-radius: 2rem;
     border: none;
-    background-color: rgba(255, 255, 255, 0.25);
-    font-size: 1rem;
-    color: #fff;
-  }
-  
-  .login-form input[type='text']::placeholder,
-  .login-form input[type='password']::placeholder {
-    color: #e6e6e6;
-  }
-  
-  .login-form input[type='text']:focus,
-  .login-form input[type='password']:focus {
+    box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff;
+}
+.login-form input[type='password'] {
+    padding-right: 2.5rem; 
+}
+
+
+
+.login-form input[type='text']:focus,
+.login-form input[type='email']:focus,
+.login-form input[type='password']:focus {
     outline: none;
-  }
-  
-  .login-button {
-    width: calc(100% - 1rem);
-    padding: 0.75rem;
-    border-radius: 25px;
+    box-shadow: 0 0 0 2px #924a07; 
+}
+
+.login-button {
+    display: block;
+    width: 100%; 
+    margin: auto; 
+    padding: 1rem;
+    border-radius: 2rem;
     border: none;
-    background-image: linear-gradient(to right, #ff758c 0%, #ff7eb3 100%);
+    background-color: #924a07; 
     color: white;
     font-size: 1rem;
-    cursor:pointer;
-  }
-  
-  .login-button:hover {
-    background-image: linear-gradient(to right, #ff758c 0%, #ff7eb3e6);
-  }
-  
-  .login-footer {
-      text-align:center;
-      padding-top:1rem;
-  }
-  
-  .login-footer a {
-      text-decoration:none;
-      color:#fff;
-      font-weight:bold;
-  }
-  
-  .login-footer a:hover {
-      text-decoration:underline;
-  }
-  
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.login-button:hover {
+    background-color: #3F51B5; 
+}
+
+.login-footer {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.login-footer a {
+    color: #5C6BC0;
+    text-decoration: none;
+}
+
+.login-footer a:hover {
+    text-decoration: underline;
+}
+
