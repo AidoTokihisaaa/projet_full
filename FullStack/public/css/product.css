@@ -115,6 +115,7 @@ header .menu {
 .cart-button:hover {
     background-color: darken(var(--button-bg-color), 10%); 
 }
+<<<<<<< HEAD
 
 .customization-options {
     font-family: Arial, sans-serif;
@@ -144,3 +145,5 @@ header .menu {
 .customization-options input[type="checkbox"] {
     margin-right: 5px;
 }
+=======
+>>>>>>> 4a2441e2e5ad582b1a9b809cc0031078b01e8fc7

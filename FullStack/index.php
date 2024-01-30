@@ -35,7 +35,11 @@
                           </a>';
                 }
             ?>
+<<<<<<< HEAD
             <a href="../FullStack/contact.php" class="contact-button">Contactez-nous</a>
+=======
+            <a class="contact-button">Contactez-nous</a>
+>>>>>>> 4a2441e2e5ad582b1a9b809cc0031078b01e8fc7
             <button class="cart-button">
                 <i class="fas fa-shopping-cart"></i>
             </button>
@@ -69,6 +73,27 @@
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur error illum assumenda? Sunt, animi voluptate itaque est cupiditate odio repellendus explicabo, nobis, nisi at molestias labore adipisci eos saepe doloribus.
             Ratione, error earum aspernatur explicabo et, cumque ex alias, sed suscipit mollitia obcaecati dolorem excepturi est iusto dolore animi reiciendis? Nisi, quia! Voluptates exercitationem amet, explicabo minima ab quam ut?</p>
             <a href="./views/product/index.php" class="product-button">Voir Produit</a>
+<<<<<<< HEAD
+=======
+        </div>
+    </div>
+    <div class="product-card">
+    <img src="./public/images/hybrid-storytellers-QSHsVUTLIRU-unsplash.jpg" alt="Produit 4">
+        <div class="product-info">
+        <h1>SNACK & NACHOS</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur error illum assumenda? Sunt, animi voluptate itaque est cupiditate odio repellendus explicabo, nobis, nisi at molestias labore adipisci eos saepe doloribus.
+            Ratione, error earum aspernatur explicabo et, cumque ex alias, sed suscipit mollitia obcaecati dolorem excepturi est iusto dolore animi reiciendis? Nisi, quia! Voluptates exercitationem amet, explicabo minima ab quam ut?</p>
+            <a href="#" class="product-button">Voir Produit</a>
+        </div>
+    </div>
+    <div class="product-card">
+    <img src="./public/images/hybrid-storytellers-QSHsVUTLIRU-unsplash.jpg" alt="Produit 4">
+        <div class="product-info">
+        <h1>SNACK & NACHOS</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur error illum assumenda? Sunt, animi voluptate itaque est cupiditate odio repellendus explicabo, nobis, nisi at molestias labore adipisci eos saepe doloribus.
+            Ratione, error earum aspernatur explicabo et, cumque ex alias, sed suscipit mollitia obcaecati dolorem excepturi est iusto dolore animi reiciendis? Nisi, quia! Voluptates exercitationem amet, explicabo minima ab quam ut?</p>
+            <a href="#" class="product-button">Voir Produit</a>
+>>>>>>> 4a2441e2e5ad582b1a9b809cc0031078b01e8fc7
         </div>
     </div>
     <div class="product-card">

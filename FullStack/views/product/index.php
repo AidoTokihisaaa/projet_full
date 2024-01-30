@@ -27,18 +27,29 @@
                           </a>';
                 }
             ?>
+<<<<<<< HEAD
 <a href="cart.php" class="cart-button">
     <i class="fas fa-shopping-cart"></i>
 </a>
 
+=======
+            <button class="cart-button">
+                <i class="fas fa-shopping-cart"></i>
+            </button>
+>>>>>>> 4a2441e2e5ad582b1a9b809cc0031078b01e8fc7
         </div>
     </div>
 </header>
 <div class="product-card">
     <img src="../../public/images/burrito-aux-frites-legumes.jpg" alt="Burrito" class="product-image">
     <div class="product-info">
+<<<<<<< HEAD
         <h2 class="product-title">FAJITAS</h2>
         <p class="product-description">délicieuse fajitas fait avec des ingrédients frais.</p>
+=======
+        <h2 class="product-title">Burrito</h2>
+        <p class="product-description">Un délicieux burrito fait avec des ingrédients frais.</p>
+>>>>>>> 4a2441e2e5ad582b1a9b809cc0031078b01e8fc7
         <p class="product-price">$10.99</p>
         <div class="quantity-control">
             <button class="btn btn-minus">-</button>
