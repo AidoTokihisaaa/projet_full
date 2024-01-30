@@ -8,14 +8,13 @@
     <title>Enregistrement</title>
 </head>
 <body>
-
 <div class="register-wrapper">
     <div class="register-card">
         <h2 class="register-title">Créer un compte</h2>
-        <form action="../register_process.php" method="post" class="register-form" id="registerForm">
+        <form action="../process/register_process.php" method="post" class="register-form" id="registerForm">
             <div class="input-group">
                 <i class="fas fa-user input-icon"></i>
-                <input type="text" id="fullname" name="fullname" placeholder="Nom complet" required>
+                <input type="text" id="name" name="name" placeholder="Nom complet" required>
             </div>
             <div class="input-group">
                 <i class="fas fa-envelope input-icon"></i>
@@ -33,7 +32,7 @@
             <button type="submit" class="register-button">S'enregistrer</button>
         </form>
         <div class="register-footer">
-            Vous avez déjà un compte ? <a href="../index.html">Connexion</a>
+            Vous avez déjà un compte ? <a href="../index.php">Connexion</a>
         </div>
     </div>
 </div>

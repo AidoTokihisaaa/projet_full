@@ -1,3 +1,10 @@
+<?php
+session_start();
+if(isset($_SESSION['user'])) {
+    header("Location: /fullstack/FullStack/index.php");
+    exit;
+}
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -8,7 +15,6 @@
     <title>Login</title>
 </head>
 <body>
-
 <div class="login-wrapper">
     <div class="login-card">
         <h2 class="login-title"><i class="fas fa-user-circle login-icon"></i> Connexion</h2>

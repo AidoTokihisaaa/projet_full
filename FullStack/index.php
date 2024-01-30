@@ -23,9 +23,18 @@
             <img src="./public/images/30082289_7636941-removebg-preview.png" alt="Logo">
         </div>
         <div class="menu-icons">
-            <a href="./views/login.php" class="user-icon-link">
-                <i class="fas fa-user customer-icon"></i>
-            </a>
+            <?php
+                session_start();
+                if(isset($_SESSION['user'])) {
+                    echo '<a href="./process/logout.php" class="user-icon-link">
+                            <i class="fas fa-power-off"></i>
+                          </a>';
+                } else {
+                    echo '<a href="./views/login.php" class="user-icon-link">
+                            <i class="fas fa-user customer-icon"></i>
+                          </a>';
+                }
+            ?>
             <a class="contact-button">Contactez-nous</a>
             <button class="cart-button">
                 <i class="fas fa-shopping-cart"></i>
@@ -59,7 +68,7 @@
         <h1>QUESADILLAS</h1>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur error illum assumenda? Sunt, animi voluptate itaque est cupiditate odio repellendus explicabo, nobis, nisi at molestias labore adipisci eos saepe doloribus.
             Ratione, error earum aspernatur explicabo et, cumque ex alias, sed suscipit mollitia obcaecati dolorem excepturi est iusto dolore animi reiciendis? Nisi, quia! Voluptates exercitationem amet, explicabo minima ab quam ut?</p>
-            <a href="./views/product/show.php" class="product-button">Voir Produit</a>
+            <a href="./views/product/index.php" class="product-button">Voir Produit</a>
         </div>
     </div>
     <div class="product-card">
@@ -94,3 +103,4 @@
 <script src="https://kit.fontawesome.com/votrekitcode.js" crossorigin="anonymous"></script>
 </body>
 </html>
+
